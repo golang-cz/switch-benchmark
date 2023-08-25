@@ -14,9 +14,9 @@ See the full [benchmark file](./benchmark_test.go).
 ```go
 switch r.URL.Path {
 case "/rpc/ExampleService/Ping":
-    pingHandlerJSON()
+    pingHandler()
 case "/rpc/ExampleService/Status":
-    statusHandlerPING()
+    statusHandler()
 default:
     notFoundHandler()
 }
@@ -25,8 +25,8 @@ default:
 ### vs. map[string]handler
 ```go
 routes := map[string]handler{
-    "/rpc/ExampleService/Ping": pingHandlerJSON,
-    "/rpc/ExampleService/Status": statusHandlerPING,
+    "/rpc/ExampleService/Ping": pingHandler,
+    "/rpc/ExampleService/Status": statusHandler,
 }
 
 handler, ok := routes[r.URL.Path]
