@@ -41,6 +41,9 @@ Turns out, the switch case statements are a little faster compared to a string h
 `switch string` binary search algorithm.
 
 ```
+$ go version
+go version go1.21.0 darwin/arm64
+
 $ go test -bench=.
 goos: darwin
 goarch: arm64
