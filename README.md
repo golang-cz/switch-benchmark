@@ -49,13 +49,13 @@ go version go1.21.0 linux/amd64
 $ go test -bench=.
 goos: linux
 goarch: amd64
-pkg: github.com/golang-cz/switch-benchmark
+pkg: github.com/golang-cz/switch-case-benchmark
 cpu: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
 BenchmarkStringSliceRange-2   	  263060	      4608 ns/op
 BenchmarkStringMap-2          	  904586	      1469 ns/op
 BenchmarkStringSwitch-2       	 1382715	       856.8 ns/op
 PASS
-ok  	github.com/golang-cz/switch-benchmark	4.676s
+ok  	github.com/golang-cz/switch-case-benchmark	4.676s
 ```
 
 ```
@@ -65,12 +65,12 @@ go version go1.21.0 darwin/arm64
 $ go test -bench=.
 goos: darwin
 goarch: arm64
-pkg: github.com/golang-cz/switch-benchmark
+pkg: github.com/golang-cz/switch-case-benchmark
 BenchmarkStringSliceRange-8   	  532791	      2254 ns/op
 BenchmarkStringMap-8          	 2152723	       518.1 ns/op
 BenchmarkStringSwitch-8       	 2780476	       433.3 ns/op
 PASS
-ok  	github.com/golang-cz/switch-benchmark	5.386s
+ok  	github.com/golang-cz/switch-case-benchmark	5.386s
 ```
 
 ## More details..
